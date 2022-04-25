@@ -1,13 +1,12 @@
 import icon from './icon.svg';
 
 export default class ObjectModelPrimitive {
-
   #yFiles;
 
   static getPrimitiveInfo() {
     return {
       icon,
-      name: 'PowerTransformer_TwoWinding',
+      name: 'PowerTransformerTwoWinding',
       title: 'Трансформатор силовой 2-х обмоточный',
       groups: ['Электрические схемы'],
     };
@@ -25,13 +24,33 @@ export default class ObjectModelPrimitive {
     instance.style = new ImageNodeStyle(icon);
 
     instance.tag = {
+      properties: {},
       initPorts: [
-        { type: 'IN', portPosition: { x: 0.5, y: 1 } },
-        { type: 'OUT', portPosition: { x: 0.5, y: 0 } },
+        {
+          primitiveName: 'inPort1',
+          type: 'IN',
+          portPosition: { x: 0.5, y: 1 },
+          properties: {
+            status: {
+              expression: ``,
+              type: 'expression',
+            },
+          },
+        },
+        {
+          primitiveName: 'outPort1',
+          type: 'OUT',
+          portPosition: { x: 0.5, y: 0 },
+          properties: {
+            status: {
+              expression: ``,
+              type: 'expression',
+            },
+          },
+        },
       ],
     };
 
     return instance;
   }
-
 }

@@ -1,13 +1,12 @@
 import icon from './6kv.svg';
 
 export default class ObjectModelPrimitive {
-
   #yFiles;
 
   static getPrimitiveInfo() {
     return {
       icon,
-      name: 'BusbarSection_6kv',
+      name: 'BusbarSection6kv',
       title: 'Секция шин 6 кВ',
       groups: ['Электрические схемы'],
     };
@@ -21,7 +20,7 @@ export default class ObjectModelPrimitive {
     const { Rect, SimpleNode, ShapeNodeStyle, ShapeNodeShape } = this.#yFiles;
 
     const instance = new SimpleNode();
-    instance.layout = new Rect(0, 0, 80, 4);
+    instance.layout = new Rect(0, 0, 400, 15);
     instance.style = new ShapeNodeStyle({
       shape: ShapeNodeShape.RECTANGLE,
       fill: 'rgb(0, 170, 0)',
@@ -35,13 +34,20 @@ export default class ObjectModelPrimitive {
       const x = prevOffset + 0.065;
       prevOffset = x;
       initPorts.push({
-        type: 'IN', portPosition: { x, y: 0.5 }
+        primitiveName: `inPort${index + 1}`,
+        type: 'IN',
+        portPosition: { x, y: 0.5 },
+        properties: {
+          status: {
+            expression: ``,
+            type: 'expression',
+          },
+        },
       });
     }
 
-    instance.tag = { initPorts };
+    instance.tag = { properties: {}, initPorts };
 
     return instance;
   }
-
 }
