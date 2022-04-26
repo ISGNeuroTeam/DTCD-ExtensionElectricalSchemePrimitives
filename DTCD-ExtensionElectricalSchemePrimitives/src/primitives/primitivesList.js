@@ -1,3 +1,4 @@
+import ACLineSegments from './ACLineSegment/list';
 import Breakers from './Breaker/list';
 import PowerTransformers from './PowerTransformer/list';
 import PotentialTransformers from './PotentialTransformer/list';
@@ -16,4 +17,5 @@ export default [
   ConnectivityNode,
   Generator,
   Engine,
+  ...ACLineSegments,
 ];
