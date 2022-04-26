@@ -9,7 +9,7 @@ export default class ObjectModelPrimitive {
       icon,
       name: 'ConnectivityNode',
       title: 'Отпайка',
-      groups: ['Электрические схемы'],
+      groups: ['Элементы электрических схем'],
     };
   }
 

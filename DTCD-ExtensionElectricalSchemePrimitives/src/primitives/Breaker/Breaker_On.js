@@ -8,7 +8,7 @@ export default class ObjectModelPrimitive {
       icon,
       name: 'BreakerOn',
       title: 'Выключатель (включен)',
-      groups: ['Электрические схемы'],
+      groups: ['Элементы электрических схем'],
     };
   }
 

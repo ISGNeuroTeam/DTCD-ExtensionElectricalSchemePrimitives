@@ -8,7 +8,7 @@ export default class ObjectModelPrimitive {
       icon,
       name: 'BusbarSection6kv',
       title: 'Секция шин 6 кВ',
-      groups: ['Электрические схемы'],
+      groups: ['Элементы электрических схем'],
     };
   }
 

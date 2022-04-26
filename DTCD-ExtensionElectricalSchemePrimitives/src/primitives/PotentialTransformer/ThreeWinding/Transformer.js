@@ -9,7 +9,7 @@ export default class ObjectModelPrimitive {
       icon,
       name: 'PotentialTransformerThreeWinding',
       title: 'Трансформатор напряжения 3-х обмоточный',
-      groups: ['Электрические схемы'],
+      groups: ['Элементы электрических схем'],
     };
   }
 
