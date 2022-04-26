@@ -5,6 +5,7 @@ import BusbarSection_6kv from './BusbarSection/BusbarSection_6kv';
 import BusbarSection_35kv from './BusbarSection/BusbarSection_35kv';
 import ConnectivityNode from './ConnectivityNode/ConnectivityNode';
 import Generator from './Generator/Generator';
+import Engine from './Engine/Engine';
 
 export default [
   ...Breakers,
@@ -14,4 +15,5 @@ export default [
   BusbarSection_35kv,
   ConnectivityNode,
   Generator,
+  Engine,
 ];
