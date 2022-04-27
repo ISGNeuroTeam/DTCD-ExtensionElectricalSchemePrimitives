@@ -28,7 +28,7 @@ export default class ObjectModelPrimitive {
       initPorts: [
         {
           primitiveName: 'inPort1',
-          type: 'IN',
+          type: ['IN', 'OUT'],
           portPosition: { x: 0.5, y: 1 },
           properties: {
             status: {
@@ -39,7 +39,7 @@ export default class ObjectModelPrimitive {
         },
         {
           primitiveName: 'outPort1',
-          type: 'OUT',
+          type: ['IN', 'OUT'],
           portPosition: { x: 0.5, y: 0 },
           properties: {
             status: {

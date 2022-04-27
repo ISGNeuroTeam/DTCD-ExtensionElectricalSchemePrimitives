@@ -35,7 +35,7 @@ export default class ObjectModelPrimitive {
       prevOffset = x;
       initPorts.push({
         primitiveName: `inPort${index + 1}`,
-        type: 'IN',
+        type: ['IN', 'OUT'],
         portPosition: { x, y: 0.5 },
         properties: {
           status: {
