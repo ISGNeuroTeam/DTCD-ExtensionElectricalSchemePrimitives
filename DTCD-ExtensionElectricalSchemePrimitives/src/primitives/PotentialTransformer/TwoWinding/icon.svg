@@ -1,0 +1,12 @@
+<svg width="55" height="55" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <rect fill="none" id="canvas_background" height="57" width="57" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <ellipse ry="15" rx="15" id="svg_23" cy="15.5" cx="27.5" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="none"/>
+  <ellipse ry="15" rx="15" id="svg_25" cy="39.5" cx="27.5" fill-opacity="null" stroke-opacity="null" stroke="#000" fill="none"/>
+ </g>
+</svg>
