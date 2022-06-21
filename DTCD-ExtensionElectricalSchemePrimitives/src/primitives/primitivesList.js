@@ -22,6 +22,7 @@ import ConnectionFilter from './ConnectionFilter/ConnectionFilter';
 import Capacitor from './Capacitor/Capacitor';
 import SurgeArrester from './SurgeArrester/SurgeArrester';
 import Arrester from './Arrester/Arrester';
+import Fuse from './Fuse/Fuse';
 
 export default [
   ...Breakers,
@@ -42,6 +43,7 @@ export default [
   Capacitor,
   SurgeArrester,
   Arrester,
+  Fuse,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
