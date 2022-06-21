@@ -13,6 +13,7 @@ import GroundSwitches from './GroundSwitch/list';
 import ShortCircuiters from './ShortCircuiter/list';
 import Separators from './Separator/list';
 import AutomaticBreakers from './AutomaticBreaker/list';
+import BreakerCarts from './BreakerCart/list';
 
 export default [
   ...Breakers,
@@ -22,6 +23,7 @@ export default [
   ...ShortCircuiters,
   ...Separators,
   ...AutomaticBreakers,
+  ...BreakerCarts,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
