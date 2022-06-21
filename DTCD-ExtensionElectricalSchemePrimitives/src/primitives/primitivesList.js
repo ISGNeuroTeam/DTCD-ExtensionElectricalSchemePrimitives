@@ -20,6 +20,7 @@ import PetersenCoils from './PetersenCoil/list';
 import WaveTrap from './WaveTrap/WaveTrap';
 import ConnectionFilter from './ConnectionFilter/ConnectionFilter';
 import Capacitor from './Capacitor/Capacitor';
+import SurgeArrester from './SurgeArrester/SurgeArrester';
 
 export default [
   ...Breakers,
@@ -38,6 +39,7 @@ export default [
   WaveTrap,
   ConnectionFilter,
   Capacitor,
+  SurgeArrester,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
