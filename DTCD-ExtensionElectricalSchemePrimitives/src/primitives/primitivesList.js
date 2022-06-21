@@ -21,6 +21,7 @@ import WaveTrap from './WaveTrap/WaveTrap';
 import ConnectionFilter from './ConnectionFilter/ConnectionFilter';
 import Capacitor from './Capacitor/Capacitor';
 import SurgeArrester from './SurgeArrester/SurgeArrester';
+import Arrester from './Arrester/Arrester';
 
 export default [
   ...Breakers,
@@ -40,6 +41,7 @@ export default [
   ConnectionFilter,
   Capacitor,
   SurgeArrester,
+  Arrester,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
