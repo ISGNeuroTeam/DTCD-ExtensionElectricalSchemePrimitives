@@ -18,6 +18,7 @@ import DisconnectorCarts from './DisconnectorCart/list';
 import AutoTransformers from './AutoTransformer/list';
 import PetersenCoils from './PetersenCoil/list';
 import WaveTrap from './WaveTrap/WaveTrap';
+import ConnectionFilter from './ConnectionFilter/ConnectionFilter';
 
 export default [
   ...Breakers,
@@ -34,6 +35,7 @@ export default [
   ...PetersenCoils,
   ...PotentialTransformers,
   WaveTrap,
+  ConnectionFilter,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
