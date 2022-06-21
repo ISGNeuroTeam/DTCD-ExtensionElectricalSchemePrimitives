@@ -11,6 +11,7 @@ import LoadBreakSwitches from './LoadBreakSwitch/list';
 import Disconnectors from './Disconnector/list';
 import GroundSwitches from './GroundSwitch/list';
 import ShortCircuiters from './ShortCircuiter/list';
+import Separators from './Separator/list';
 
 export default [
   ...Breakers,
@@ -18,6 +19,7 @@ export default [
   ...Disconnectors,
   ...GroundSwitches,
   ...ShortCircuiters,
+  ...Separators,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
