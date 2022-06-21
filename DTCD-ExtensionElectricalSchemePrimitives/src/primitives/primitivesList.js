@@ -14,6 +14,7 @@ import ShortCircuiters from './ShortCircuiter/list';
 import Separators from './Separator/list';
 import AutomaticBreakers from './AutomaticBreaker/list';
 import BreakerCarts from './BreakerCart/list';
+import DisconnectorCarts from './DisconnectorCart/list';
 
 export default [
   ...Breakers,
@@ -24,6 +25,7 @@ export default [
   ...Separators,
   ...AutomaticBreakers,
   ...BreakerCarts,
+  ...DisconnectorCarts,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
