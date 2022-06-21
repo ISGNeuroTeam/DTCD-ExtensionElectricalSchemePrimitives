@@ -8,10 +8,12 @@ import ConnectivityNode from './ConnectivityNode/ConnectivityNode';
 import Generator from './Generator/Generator';
 import Engine from './Engine/Engine';
 import LoadBreakSwitches from './LoadBreakSwitch/list';
+import Disconnectors from './Disconnector/list';
 
 export default [
   ...Breakers,
   ...LoadBreakSwitches,
+  ...Disconnectors,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
