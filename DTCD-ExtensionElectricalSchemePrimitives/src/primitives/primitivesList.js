@@ -10,12 +10,14 @@ import Engine from './Engine/Engine';
 import LoadBreakSwitches from './LoadBreakSwitch/list';
 import Disconnectors from './Disconnector/list';
 import GroundSwitches from './GroundSwitch/list';
+import ShortCircuiters from './ShortCircuiter/list';
 
 export default [
   ...Breakers,
   ...LoadBreakSwitches,
   ...Disconnectors,
   ...GroundSwitches,
+  ...ShortCircuiters,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
