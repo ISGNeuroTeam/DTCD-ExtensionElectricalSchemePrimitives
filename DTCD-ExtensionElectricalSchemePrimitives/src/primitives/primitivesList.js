@@ -19,6 +19,7 @@ import AutoTransformers from './AutoTransformer/list';
 import PetersenCoils from './PetersenCoil/list';
 import WaveTrap from './WaveTrap/WaveTrap';
 import ConnectionFilter from './ConnectionFilter/ConnectionFilter';
+import Capacitor from './Capacitor/Capacitor';
 
 export default [
   ...Breakers,
@@ -36,6 +37,7 @@ export default [
   ...PotentialTransformers,
   WaveTrap,
   ConnectionFilter,
+  Capacitor,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
