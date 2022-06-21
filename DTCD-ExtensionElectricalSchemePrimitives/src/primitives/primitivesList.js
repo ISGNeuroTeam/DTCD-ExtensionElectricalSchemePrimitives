@@ -17,6 +17,7 @@ import BreakerCarts from './BreakerCart/list';
 import DisconnectorCarts from './DisconnectorCart/list';
 import AutoTransformers from './AutoTransformer/list';
 import PetersenCoils from './PetersenCoil/list';
+import WaveTrap from './WaveTrap/WaveTrap';
 
 export default [
   ...Breakers,
@@ -32,6 +33,7 @@ export default [
   ...PowerTransformers,
   ...PetersenCoils,
   ...PotentialTransformers,
+  WaveTrap,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
