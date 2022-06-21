@@ -23,6 +23,7 @@ import Capacitor from './Capacitor/Capacitor';
 import SurgeArrester from './SurgeArrester/SurgeArrester';
 import Arrester from './Arrester/Arrester';
 import Fuse from './Fuse/Fuse';
+import CurrentLimitingReactors from './CurrentLimitingReactor/list';
 
 export default [
   ...Breakers,
@@ -44,6 +45,7 @@ export default [
   SurgeArrester,
   Arrester,
   Fuse,
+  ...CurrentLimitingReactors,
   BusbarSection_6kv,
   BusbarSection_35kv,
   ConnectivityNode,
