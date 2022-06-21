@@ -7,9 +7,11 @@ import BusbarSection_35kv from './BusbarSection/BusbarSection_35kv';
 import ConnectivityNode from './ConnectivityNode/ConnectivityNode';
 import Generator from './Generator/Generator';
 import Engine from './Engine/Engine';
+import LoadBreakSwitches from './LoadBreakSwitch/list';
 
 export default [
   ...Breakers,
+  ...LoadBreakSwitches,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
