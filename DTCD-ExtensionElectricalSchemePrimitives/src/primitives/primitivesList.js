@@ -9,11 +9,13 @@ import Generator from './Generator/Generator';
 import Engine from './Engine/Engine';
 import LoadBreakSwitches from './LoadBreakSwitch/list';
 import Disconnectors from './Disconnector/list';
+import GroundSwitches from './GroundSwitch/list';
 
 export default [
   ...Breakers,
   ...LoadBreakSwitches,
   ...Disconnectors,
+  ...GroundSwitches,
   ...PowerTransformers,
   ...PotentialTransformers,
   BusbarSection_6kv,
