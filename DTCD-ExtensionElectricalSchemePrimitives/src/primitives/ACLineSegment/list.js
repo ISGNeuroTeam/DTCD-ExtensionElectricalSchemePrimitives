@@ -1,28 +1,15 @@
+import voltages from '../../utils/voltages';
 import ACLineSegment from './ACLineSegment';
-
-import icon_6kv from './6kv.svg';
-import icon_35kv from './35kv.svg';
-
-const primitivesData = [
-  {
-    name: 'ACLineSegment6kv',
-    title: 'Воздушная линия 6 кВ',
-    color: 'rgb(0, 170, 0)',
-    icon: icon_6kv,
-  },
-  {
-    name: 'ACLineSegment35kv',
-    title: 'Воздушная линия 35 кВ',
-    color: 'rgb(150, 75, 0)',
-    icon: icon_35kv,
-  },
-];
+import baseIcon from './icon.svg';
 
 const groups = ['Элементы электрических схем'];
 
-export default primitivesData.map(primitive => {
-  const { name, title, color, icon } = primitive;
-  const primitiveInfo = { icon, name, title, groups };
+export default voltages.map(({ val, color }) => {
+  const name = `ACLineSegment${val}kV`;
+  const title = `Воздушная линия ${val} кВ`;
+  const icon = baseIcon.replace('COLOR', color);
+
+  const primitiveInfo = { name, title, icon, groups };
 
   const classBuilder = new Function('baseClass', 'info', `
     return class ${name} extends baseClass {
