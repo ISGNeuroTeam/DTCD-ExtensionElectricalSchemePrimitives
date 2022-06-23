@@ -1,19 +1,10 @@
-import icon from './6kv.svg';
-
 export default class ObjectModelPrimitive {
   #yFiles;
+  #color;
 
-  static getPrimitiveInfo() {
-    return {
-      icon,
-      name: 'BusbarSection6kv',
-      title: 'Секция шин 6 кВ',
-      groups: ['Элементы электрических схем'],
-    };
-  }
-
-  constructor(yFiles) {
+  constructor(yFiles, color) {
     this.#yFiles = yFiles.default;
+    this.#color = color;
   }
 
   create() {
@@ -23,7 +14,7 @@ export default class ObjectModelPrimitive {
     instance.layout = new Rect(0, 0, 400, 15);
     instance.style = new ShapeNodeStyle({
       shape: ShapeNodeShape.RECTANGLE,
-      fill: 'rgb(0, 170, 0)',
+      fill: this.#color,
       stroke: '0px solid',
     });
 
@@ -31,7 +22,7 @@ export default class ObjectModelPrimitive {
     let prevOffset = 0;
 
     for (let index = 0; index < 15; index++) {
-      const x = prevOffset + 0.065;
+      const x = prevOffset + 0.0625;
       prevOffset = x;
       initPorts.push({
         primitiveName: `inPort${index + 1}`,
