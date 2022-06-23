@@ -1,5 +1,6 @@
 import BusbarSections from './BusbarSection/list';
 import ACLineSegments from './ACLineSegment/list';
+import ACLineSegmentsCable from './ACLineSegmentCable/list';
 import Breakers from './Breaker/list';
 import PowerTransformers from './PowerTransformer/list';
 import PotentialTransformers from './PotentialTransformer/list';
@@ -54,4 +55,5 @@ export default [
   Engine,
   ...BusbarSections,
   ...ACLineSegments,
+  ...ACLineSegmentsCable,
 ];
