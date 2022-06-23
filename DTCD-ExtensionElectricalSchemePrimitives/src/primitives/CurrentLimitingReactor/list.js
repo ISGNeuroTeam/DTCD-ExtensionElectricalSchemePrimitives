@@ -1,3 +1,4 @@
+import CurrentLimitingReactorSingle from './CurrentLimitingReactorSingle';
 import CurrentLimitingReactorDouble from './CurrentLimitingReactorDouble';
 
-export default [CurrentLimitingReactorDouble];
+export default [CurrentLimitingReactorSingle, CurrentLimitingReactorDouble];
