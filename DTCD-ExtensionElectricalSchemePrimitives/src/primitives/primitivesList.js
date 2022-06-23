@@ -24,6 +24,7 @@ import SurgeArrester from './SurgeArrester/SurgeArrester';
 import Arrester from './Arrester/Arrester';
 import Fuse from './Fuse/Fuse';
 import CurrentLimitingReactors from './CurrentLimitingReactor/list';
+import ShuntReactors from './ShuntReactor/list';
 import SynchronousCompensator from './SynchronousCompensator/SynchronousCompensator';
 import CurrentTransformer from './CurrentTransformer/CurrentTransformer';
 
@@ -48,6 +49,7 @@ export default [
   Arrester,
   Fuse,
   ...CurrentLimitingReactors,
+  ...ShuntReactors,
   SynchronousCompensator,
   CurrentTransformer,
   ConnectivityNode,
