@@ -23,6 +23,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - SubstationEE
   - TapConnectorEE
   - ZruEE
+  - CableLine04Kv
+  - CableLine6Kv
+  - CableLine35Kv
+  - CableLine110Kv
+  - CableLine220Kv
+  - CableLine330Kv
+  - CableLine400Kv
+  - CableLine500Kv
 
 ## [0.3.0]
 

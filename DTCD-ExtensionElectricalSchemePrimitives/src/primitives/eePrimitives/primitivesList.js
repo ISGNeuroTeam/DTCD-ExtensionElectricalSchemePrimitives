@@ -11,6 +11,7 @@ import ZruEE from './eeZru/ZruEE';
 import PowerLineEE from './eePowerLine/PowerLineEE';
 import StationEE from './eeStation/StationEE';
 import SubstationEE from './eeSubstation/SubstationEE';
+import cableLinesEE from './eeCableLine/list';
 
 export default [
   EngineEE,
@@ -26,4 +27,5 @@ export default [
   PowerLineEE,
   StationEE,
   SubstationEE,
+  ...cableLinesEE,
 ];
