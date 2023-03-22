@@ -27,6 +27,7 @@ import CurrentLimitingReactors from './CurrentLimitingReactor/list';
 import ShuntReactors from './ShuntReactor/list';
 import SynchronousCompensator from './SynchronousCompensator/SynchronousCompensator';
 import CurrentTransformer from './CurrentTransformer/CurrentTransformer';
+import eePrimitives from './eePrimitives/primitivesList';
 
 export default [
   ...Breakers,
@@ -58,4 +59,5 @@ export default [
   ...BusbarSections,
   ...ACLineSegments,
   ...ACLineSegmentsCable,
+  ...eePrimitives,
 ];
