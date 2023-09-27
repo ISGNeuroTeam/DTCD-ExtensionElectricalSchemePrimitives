@@ -13,7 +13,7 @@ export default class OutEE {
   }
 
   constructor(yFiles) {
-    this.#yFiles = yFiles.default;
+    this.#yFiles = yFiles;
   }
 
   create() {

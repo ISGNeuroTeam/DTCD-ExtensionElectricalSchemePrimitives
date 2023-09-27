@@ -24,7 +24,7 @@ export class ExtensionElectricalSchemePrimitives extends ExtensionPlugin {
   constructor() {
     super();
 
-    const yFiles = this.getDependence('yFiles');
+    const yFiles = this.getDependence('yfiles', 'esm', '2.5.0');
 
     primitivesList.forEach(PrimitiveClass => {
       const { name } = PrimitiveClass.getPrimitiveInfo();

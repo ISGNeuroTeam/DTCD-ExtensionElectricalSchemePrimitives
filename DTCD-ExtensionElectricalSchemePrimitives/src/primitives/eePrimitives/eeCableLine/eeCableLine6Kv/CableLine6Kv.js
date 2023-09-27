@@ -13,7 +13,7 @@ export default class CableLine6Kv {
   }
 
   constructor(yFiles) {
-    this.#yFiles = yFiles.default;
+    this.#yFiles = yFiles;
   }
 
   create() {

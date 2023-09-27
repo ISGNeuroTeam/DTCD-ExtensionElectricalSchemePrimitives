@@ -5,7 +5,7 @@ export default class ObjectModelPrimitive {
   #strokeColor;
 
   constructor(yFiles, strokeColor) {
-    this.#yFiles = yFiles.default;
+    this.#yFiles = yFiles;
     this.#strokeColor = strokeColor;
     this.customArrow = getCustomEdgeArrow(this.#yFiles)
   }

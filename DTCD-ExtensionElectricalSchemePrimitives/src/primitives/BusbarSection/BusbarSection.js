@@ -3,7 +3,7 @@ export default class ObjectModelPrimitive {
   #color;
 
   constructor(yFiles, color) {
-    this.#yFiles = yFiles.default;
+    this.#yFiles = yFiles;
     this.#color = color;
   }
 
